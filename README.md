@@ -1,4 +1,4 @@
-# PERSONAL PERSONAL PROJECTS
+# PERSONAL PYTHON PROJECTS
 
 ## This is my Personal Python projects! These projects are designed with beginners in mind, offering practical and hands-on coding experiences.
 
