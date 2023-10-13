@@ -9,15 +9,15 @@ def binary_search(list,target):
     first = 0  #first position in the list
     last = len(list) - 1     #last position of item in list
 
-    while last >= first:
+    while last >= first:                 #the cod will keep running until the last variable is greater than or equal to the first variable
         midpoint = (first + last) // 2        #use the floor division to round the mid point down
 
         if list[midpoint] == target:           #checks if the value at the midpoint is equal to the target
             return midpoint                     #then it returns the index positon of the target
         elif target > list[midpoint]:         #checks if the target is greater the value in the midpoint 
             first = midpoint + 1               #then we add one to the midpoint, which will indicate our starting position from the list
-        else:                                #else if the 
-            last = midpoint - 1
+        else:                                #else if the value at the midpoint is greater than the target,then
+            last = midpoint - 1              #the one is substracted from the midpoint
 
     return None
 
