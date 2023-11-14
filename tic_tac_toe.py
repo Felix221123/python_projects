@@ -27,6 +27,7 @@ DEFAULT_PLAYERS = (
     Player(label="O", color="red"),
 )
 
+
 class TicTacToeGame:
     def __init__(self, players=DEFAULT_PLAYERS, board_size=BOARD_SIZE):
         self._players = cycle(players)
