@@ -1,33 +1,33 @@
+# libraries imported
 import datetime
 import sys
 import argparse
 import random
 
 
-def intro():
-    print(f'Hello Admin {arg.adminName.capitalize()}\nI hope you have a good day today 😊')
+# def intro():
+#     print(f'Hello Admin {arg.adminName.capitalize()}\nI hope you have a good day today 😊')
 
-parser = argparse.ArgumentParser(
-    prog='Admin info',
-    description='Store info for the Admin user',
+# parser = argparse.ArgumentParser(
+#     prog='Admin info',
+#     description='Store info for the Admin user',
     
-)
+# )
 
-parser.add_argument(
-    '-u', '--adminName' , metavar='adminName',
-    required=True , help='I want to get the user or the admins name'
-)
+# parser.add_argument(
+#     '-u', '--adminName' , metavar='adminName',
+#     required=True , help='I want to get the user or the admins name'
+# )
 
-arg = parser.parse_args()
+# arg = parser.parse_args()
 
 
 
 
 #class that represents books
 class Book():
-    intro()
-    def __init__(self, 
-                 title , author , year_of_publication, book_id):
+    # intro()
+    def __init__(self, title , author , year_of_publication, book_id):
         self.title = title
         self.author = author
         self.year_of_publication = year_of_publication
@@ -52,7 +52,7 @@ class Book():
                 is_valid = False
             else:
                 is_valid = True
-                print('Brother , type a valid book author.....')
+                print('Please type a valid book author.....')
                 # continue
 
     def get_the_author(self):
@@ -97,7 +97,7 @@ class Library(Book):
         my_new_books = {
             "Book title " : self.title,
             "Book Author " : self.author,
-            "Year Of Publication " : self.year_of_publication,
+            "Year Of Publication" : self.year_of_publication,
             "Book ID" : self.book_id
         }
         # my_new_books = Book(self.title, self.author, self.year_of_publication, self.book_id)
@@ -155,7 +155,6 @@ class Library(Book):
 
 book_1 = Library()
 book_1.User_addbooks()
-
 book_1.list_all_books()
 book_1.Update_author_inlibrary()
 book_1.Update_published_year()
